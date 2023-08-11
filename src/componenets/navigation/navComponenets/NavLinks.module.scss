@@ -1,0 +1,107 @@
+@use "../../../scss/abstracts" as a;
+@use "../../../scss/base" as b;
+
+// NAVIGATION LINKS
+.link-box {
+  display: flex;
+  gap: b.$margin-mid-3;
+  list-style: none;
+  align-items: center;
+}
+.link {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s;
+}
+.link:link,
+.link:visited {
+  color: a.$color-primary;
+  font-size: b.$font-size-mid;
+}
+
+.link:hover,
+.link:active {
+  // color: a.$text-color-white-1;
+  color: a.$color-shade;
+  font-size: b.$font-size-mid;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: a.$color-shade;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+// WHEN ITS STICKY
+.dark-text:link,
+.dark-text:visited {
+  // color: a.$grey;
+  color: a.$color-primary;
+  font-size: b.$font-size-mid;
+}
+.dark-text:hover,
+.dark-text:active {
+  // color: a.$grey-2;
+  color: a.$color-shade;
+  font-size: b.$font-size-mid;
+}
+
+@media (max-width: 550px) {
+  .link-box {
+    gap: 2rem;
+  }
+  .link,
+  .link:link,
+  .link:visited {
+    font-size: b.$font-size-small-3;
+  }
+}
+@media (max-width: 380px) {
+  .link-box {
+    gap: 2rem;
+    & li:nth-child(3) {
+      width: 5rem;
+    }
+    & li:nth-child(4) {
+      width: 5rem;
+    }
+  }
+  .link,
+  .link:link,
+  .link:visited {
+    font-size: b.$font-size-smal-2;
+  }
+}
+@media (max-width: 300px) {
+  .link-box {
+    gap: 0.5rem;
+
+    & li:nth-child(3) {
+      width: 5rem;
+    }
+    & li:nth-child(4) {
+      width: 5rem;
+    }
+  }
+  .link,
+  .link:link,
+  .link:visited {
+    font-size: b.$font-size-small-1;
+
+    width: 4.5rem;
+    height: 1rem;
+    text-align: center;
+  }
+}
