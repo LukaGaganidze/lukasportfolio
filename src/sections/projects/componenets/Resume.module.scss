@@ -1,0 +1,40 @@
+@use "../../../scss/abstracts" as a;
+@use "../../../scss/base" as b;
+
+.resume {
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+
+  &__text,
+  &__text:link,
+  &__text:visited {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: a.$color-primary;
+    text-align: center;
+    background-color: rgba($color: a.$color-secondary, $alpha: 0.5);
+    padding: 5rem;
+    border-radius: 0.5rem;
+
+    & h3 {
+      font-size: b.$font-size-large;
+    }
+  }
+
+  &__img {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../assets/sections/resume/resume.jpg");
+    filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}

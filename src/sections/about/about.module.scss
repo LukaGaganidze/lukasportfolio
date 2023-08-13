@@ -1,4 +1,47 @@
+@use "../../scss/abstracts" as a;
+@use "../../scss/base" as b;
+
 .about {
-  height: 100vh;
-  width: 100%;
+  padding: b.$margin-large-3 0;
+  background-color: a.$color-shade;
+
+  // HEADING
+  &__heading {
+    font-size: b.$font-size-large-1;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: b.$margin-mid;
+    letter-spacing: 2px;
+  }
+
+  // IMAGE
+  &__img-container {
+    width: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: b.$margin-mid;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // MAIN TEXT
+  &__text {
+    max-width: 60rem;
+    margin: 0 auto;
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: b.$font-size-mid;
+    line-height: 25px;
+
+    &__highlight {
+      font-weight: 800;
+    }
+  }
 }

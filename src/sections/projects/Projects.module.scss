@@ -1,0 +1,74 @@
+@use "../../scss/abstracts" as a;
+@use "../../scss/base" as b;
+
+.projects-sec {
+  padding: b.$margin-large-3 0;
+  padding-top: 15rem;
+}
+.projects {
+  width: b.$container-large-1;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  &:not(:last-child) {
+    margin-bottom: b.$margin-large-1;
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: b.$font-size-large-2;
+    letter-spacing: 3px;
+    margin-bottom: b.$margin-large;
+  }
+
+  // IMG
+  & img {
+    width: 55rem;
+    height: auto;
+  }
+
+  // TEXT
+  &__text {
+    max-width: 55rem;
+
+    & h3 {
+      margin-bottom: 3rem;
+      font-size: b.$font-size-mid-2;
+    }
+
+    & p {
+      font-size: b.$font-size-mid;
+      letter-spacing: 1px;
+      margin-bottom: 3rem;
+      font-weight: 600;
+    }
+  }
+
+  // BUTTONS
+  &__links {
+    & a,
+    & a:link,
+    & a:visited {
+      font-size: b.$font-size-small-3;
+      color: a.$color-secondary;
+      letter-spacing: 2px;
+      border: solid a.$color-secondary;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      font-weight: 800;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      transition: all 0.4s;
+    }
+
+    & a:hover,
+    & a:active {
+      color: a.$color-primary;
+      background-color: a.$color-secondary;
+    }
+  }
+}
