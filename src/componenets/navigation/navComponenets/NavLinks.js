@@ -1,18 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 
 import classes from "./NavLinks.module.scss";
 
 const NavLinks = ({ sticky }) => {
-  // MENU GLOBAL CONTEXT,
-
   return (
     <ul className={classes["link-box"]}>
       <li className={classes["link-list"]}>
         <Link
-          // onClick={homeWasClicked}
           className={`${classes["link"]} ${
             classes[!sticky ? "dark-text" : ""]
           }`}
@@ -23,7 +20,6 @@ const NavLinks = ({ sticky }) => {
       </li>
       <li className={classes["link-list"]}>
         <Link
-          // onClick={bookWasClicked}
           className={`${classes["link"]} ${
             classes[!sticky ? "dark-text" : ""]
           }`}
@@ -34,7 +30,6 @@ const NavLinks = ({ sticky }) => {
       </li>
       <li className={classes["link-box"]}>
         <Link
-          // onClick={infoWasClicked}
           className={`${classes["link"]} ${
             classes[!sticky ? "dark-text" : ""]
           }`}
@@ -46,7 +41,6 @@ const NavLinks = ({ sticky }) => {
 
       <li className={classes["link-box"]}>
         <Link
-          // onClick={contactWasClicked}
           className={`${classes["link"]} ${
             classes[!sticky ? "dark-text" : ""]
           }`}

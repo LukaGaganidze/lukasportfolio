@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useRef, useState } from "react";
 import { Quicksand } from "next/font/google";
 
@@ -36,7 +37,9 @@ const Navigation = () => {
     const navbarObserver = new IntersectionObserver(stickyNav, options);
 
     // OBSERVE
-    navbarObserver.observe(navbar.current);
+    if (navbar.current) {
+      navbarObserver.observe(navbar.current);
+    }
 
     //CLEANUP FUNCTION
     return () => {
