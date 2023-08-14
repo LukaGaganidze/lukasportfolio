@@ -11,6 +11,8 @@
 
   & h3 {
     font-size: b.$font-size-large-1;
+    width: 25rem;
+    text-align: center;
   }
 
   & p {
@@ -75,6 +77,8 @@
     & h3 {
       font-size: b.$font-size-large;
       padding: 0 2rem;
+      width: 22rem;
+      text-align: center;
     }
 
     & p {
@@ -117,6 +121,8 @@
 
     & h3 {
       font-size: b.$font-size-mid-2;
+      width: 21rem;
+      text-align: center;
     }
 
     & p {
@@ -143,11 +149,20 @@
   .contact {
     & h3 {
       font-size: b.$font-size-mid;
+      width: 18rem;
+      text-align: center;
     }
   }
 }
 @media (max-width: 350px) {
   .contact-container {
     gap: b.$margin-small-3;
+  }
+  .contact {
+    & h3 {
+      font-size: b.$font-size-mid;
+      width: 16rem;
+      text-align: center;
+    }
   }
 }
