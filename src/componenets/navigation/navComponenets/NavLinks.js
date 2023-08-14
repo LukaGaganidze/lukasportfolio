@@ -29,7 +29,7 @@ const NavLinks = ({ sticky }) => {
             SKILLS
           </Link>
         </li>
-        <li className={classes["link-box"]}>
+        <li className={classes["link-list"]}>
           <Link
             className={`${classes["link"]} ${
               classes[!sticky ? "dark-text" : ""]
@@ -40,7 +40,7 @@ const NavLinks = ({ sticky }) => {
           </Link>
         </li>
 
-        <li className={classes["link-box"]}>
+        <li className={classes["link-list"]}>
           <Link
             className={`${classes["link"]} ${
               classes[!sticky ? "dark-text" : ""]

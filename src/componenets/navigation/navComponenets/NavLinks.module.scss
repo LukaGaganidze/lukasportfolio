@@ -13,14 +13,14 @@
   height: 5rem;
 }
 .link {
+  display: flex;
   display: inline-block;
   position: relative;
   transition: all 0.5s;
-  display: flex;
 }
 
 .link-box {
-  padding: 0 2rem;
+  margin-left: 2rem;
   & li:not(:last-child) {
     margin-right: 5rem;
   }
