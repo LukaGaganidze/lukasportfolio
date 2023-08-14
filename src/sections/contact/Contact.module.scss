@@ -1,0 +1,153 @@
+@use "../../scss/abstracts" as a;
+@use "../../scss/base" as b;
+
+.contact {
+  background-color: a.$color-shade;
+  padding: b.$margin-large-3 0;
+
+  &__svg {
+    height: 8rem;
+  }
+
+  & h3 {
+    font-size: b.$font-size-large-1;
+  }
+
+  & p {
+    text-align: center;
+    line-height: 3rem;
+    font-size: b.$font-size-mid-1;
+  }
+}
+
+.contact-container {
+  max-width: b.$container-mid-1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: b.$margin-mid;
+}
+
+.envelope-container,
+.envelope-container:link,
+.envelope-container:visited {
+  color: black;
+  transition: all 0.5s;
+}
+.envelope-container {
+  border: solid black;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  padding: 1rem 2rem;
+  font-size: b.$font-size-mid;
+  border-radius: 1rem;
+}
+.envelope-container:hover,
+.envelope-container:active {
+  border: solid black;
+  background-color: black;
+  font-size: b.$font-size-mid;
+  color: a.$color-primary;
+
+  &:hover .icon-envelope {
+    color: a.$color-primary;
+  }
+}
+
+.icon-envelope {
+  width: 3rem;
+  color: black;
+  transition: all 0.5s;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    background-color: a.$color-shade;
+    padding: b.$margin-large 0;
+
+    &__svg {
+      height: 5rem;
+    }
+
+    & h3 {
+      font-size: b.$font-size-large;
+      padding: 0 2rem;
+    }
+
+    & p {
+      line-height: 2.5rem;
+      font-size: b.$font-size-mid;
+      padding: 0 2rem;
+    }
+  }
+
+  .envelope-container {
+    border: solid black 2px;
+    gap: 1rem;
+    width: max-content;
+    font-size: b.$font-size-small-3 !important;
+  }
+  .icon-envelope {
+    width: 2rem;
+  }
+
+  .envelope-container:hover,
+  .envelope-container:active {
+    border: solid black 2px !important;
+    background-color: black;
+    font-size: b.$font-size-small-3 !important;
+    color: a.$color-primary;
+
+    &:hover .icon-envelope {
+      color: a.$color-primary;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .contact-container {
+    gap: b.$margin-small-3;
+  }
+  .contact {
+    &__svg {
+      height: 4rem;
+    }
+
+    & h3 {
+      font-size: b.$font-size-mid-2;
+    }
+
+    & p {
+      line-height: 2rem;
+      font-size: b.$font-size-small-3;
+    }
+  }
+
+  .envelope-container {
+    border: solid black 2px;
+    gap: 1rem;
+    width: max-content;
+    font-size: b.$font-size-smal-2 !important;
+    padding: 1rem 1.5rem;
+  }
+
+  .envelope-container:hover,
+  .envelope-container:active {
+    font-size: b.$font-size-smal-2 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact {
+    & h3 {
+      font-size: b.$font-size-mid;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .contact-container {
+    gap: b.$margin-small-3;
+  }
+}

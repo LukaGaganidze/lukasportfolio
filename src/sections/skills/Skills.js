@@ -27,7 +27,7 @@ import design from "../../assets/sections/skills/whatIDo/illustration.png";
 
 const Skills = () => {
   return (
-    <section className={classes["skills-sec"]}>
+    <section id="skills" className={classes["skills-sec"]}>
       <div className={classes["skills"]}>
         {/* TOOLS AND SKILLS */}
         <div>

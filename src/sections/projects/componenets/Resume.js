@@ -11,7 +11,11 @@ const headingFont = Quicksand({ subsets: ["latin"] });
 const Resume = () => {
   return (
     <div className={classes["resume"]}>
-      <Link href="#" className={classes["resume__text"]}>
+      <Link
+        target="_blank"
+        href="https://drive.google.com/file/d/1SCmP8S2VySisbIdrdJl2UxiQGSWxMVzC/view"
+        className={classes["resume__text"]}
+      >
         <h3 className={headingFont.className}>CHECK OUT MY RÉSUMÉ</h3>
       </Link>
       <div className={classes["resume__img"]}></div>

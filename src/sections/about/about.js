@@ -8,7 +8,7 @@ const headingFont = Quicksand({ subsets: ["latin"] });
 
 const About = () => {
   return (
-    <section className={classes["about"]}>
+    <section id="about" className={classes["about"]}>
       {/* HEADING */}
       <h2 className={`${headingFont.className} ${classes["about__heading"]}`}>
         {" "}

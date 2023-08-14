@@ -1,0 +1,64 @@
+@use "../../scss/abstracts" as a;
+@use "../../scss/base" as b;
+
+.footer {
+  background-color: a.$color-secondary-shade;
+  padding: b.$margin-large-1 0;
+
+  & span {
+    color: a.$color-primary;
+    display: block;
+    text-align: center;
+  }
+}
+
+.footer-container {
+  max-width: b.$container-large;
+  margin: 0 auto;
+}
+
+.links-container {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: b.$margin-mid;
+
+  display: flex;
+  gap: 3rem;
+
+  & a:hover img,
+  & a:active img {
+    filter: grayscale(0);
+  }
+
+  & img {
+    width: 5rem;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 600px) {
+  .links-container {
+    display: flex;
+    gap: 2rem;
+
+    & img {
+      width: 3rem;
+      height: auto;
+      filter: grayscale(0);
+      transition: all 0.5s;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .links-container {
+    display: flex;
+    gap: 1.5rem;
+
+    & img {
+      width: 2.5rem;
+    }
+  }
+}

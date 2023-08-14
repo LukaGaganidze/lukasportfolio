@@ -11,19 +11,6 @@
 }
 
 // NAVIGATION
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
-  padding: 0 8rem;
-
-  // BURGER AND LINKS
-  &--burger-n-links-box {
-    display: flex;
-    gap: b.$margin-large-5;
-  }
-}
 
 // STICKY STYLES
 .sticky {

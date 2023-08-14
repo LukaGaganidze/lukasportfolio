@@ -31,10 +31,81 @@
     height: 100%;
     width: 100%;
     background-image: url("../../../assets/sections/resume/resume.jpg");
-    filter: blur(5px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1000px) {
+  .resume__text,
+  .resume__text:link,
+  .resume__text:visited {
+    & h3 {
+      font-size: b.$font-size-mid;
+      width: 26rem;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .resume {
+    height: 25rem;
+
+    &__img {
+      background-image: url("../../../assets/sections/resume/mobile-res.jpg");
+      filter: blur(3px);
+    }
+  }
+  .resume__text,
+  .resume__text:link,
+  .resume__text:visited {
+    padding: 3rem;
+    & h3 {
+      font-size: b.$font-size-mid;
+      width: 26rem;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .resume {
+    height: 20rem;
+  }
+  .resume__text,
+  .resume__text:link,
+  .resume__text:visited {
+    padding: 3rem;
+    & h3 {
+      font-size: b.$font-size-small-3;
+      width: 20rem;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .resume {
+    height: 15rem;
+  }
+  .resume__text,
+  .resume__text:link,
+  .resume__text:visited {
+    padding: 2rem 0.5rem;
+    & h3 {
+      font-size: b.$font-size-small-3;
+      width: 20rem;
+    }
+  }
+}
+@media (max-width: 300px) {
+  .resume {
+    height: 12rem;
+  }
+  .resume__text,
+  .resume__text:link,
+  .resume__text:visited {
+    padding: 1rem;
+    & h3 {
+      font-size: b.$font-size-smal-2;
+      width: 14rem;
+    }
   }
 }

@@ -6,6 +6,7 @@ import { Quicksand } from "next/font/google";
 import classes from "./navigation.module.scss";
 
 import NavLinks from "./navComponenets/NavLinks";
+import MobileNav from "./navComponenets/MobileNav";
 
 const headingFont = Quicksand({ subsets: ["latin"] });
 
@@ -59,13 +60,8 @@ const Navigation = () => {
           classes[!isVisible ? "sticky" : ""]
         }`}
       >
-        <div className={`${classes["navigation--burger-n-links-box"]}`}>
-          {/* NAV LINKS */}
-          <NavLinks sticky={isVisible} />
-        </div>
-
-        {/* LANGUAGE */}
-        {/* <Languages sticky={isVisible} /> */}
+        {/* NAV LINKS */}
+        <NavLinks sticky={isVisible} />
       </nav>
     </div>
   );

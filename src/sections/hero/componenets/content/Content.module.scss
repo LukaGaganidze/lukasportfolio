@@ -34,6 +34,7 @@
   position: absolute;
   bottom: 3rem;
   left: 50%;
+  transform: translateX(-50%);
 
   cursor: pointer;
 
@@ -48,4 +49,42 @@
   color: rgba($color: a.$color-primary, $alpha: 0.3);
   width: 7rem;
   transition: all 0.5s;
+}
+
+@media (max-width: 700px) {
+  .content {
+    height: 100vh;
+
+    & h1 {
+      & span:first-child {
+        font-size: b.$font-size-large-1;
+        font-weight: 100;
+      }
+
+      & span:last-child {
+        font-size: b.$font-size-smal-2;
+        letter-spacing: 3.5px;
+      }
+    }
+  }
+
+  .icon {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .content {
+    & h1 {
+      & span:first-child {
+        font-size: b.$font-size-large;
+        font-weight: 100;
+      }
+
+      & span:last-child {
+        font-size: b.$font-size-small;
+        letter-spacing: 3.1px;
+      }
+    }
+  }
 }

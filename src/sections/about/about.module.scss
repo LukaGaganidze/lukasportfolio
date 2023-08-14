@@ -45,3 +45,35 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .about {
+    padding: b.$margin-large-1 0;
+  }
+  .about__heading {
+    font-size: b.$font-size-large;
+  }
+  .about__text {
+    font-size: b.$font-size-mid;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__img-container {
+    width: 15rem;
+  }
+  .about__heading {
+    font-size: b.$font-size-mid-1;
+  }
+
+  .about__text {
+    font-size: b.$font-size-small-3;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .about__heading {
+    font-size: b.$font-size-mid;
+  }
+}

@@ -16,6 +16,11 @@ html {
   scroll-behavior: smooth;
 }
 
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   font-size: 1.6rem;
 }

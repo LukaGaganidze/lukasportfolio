@@ -17,7 +17,7 @@ const Content = () => {
         <span>front-end web developer</span>
       </h1>
 
-      <Link className={classes["icon-link"]} href="#">
+      <Link className={classes["icon-link"]} href="#about">
         <FontAwesomeIcon className={classes["icon"]} icon={faChevronDown} />
       </Link>
     </div>
