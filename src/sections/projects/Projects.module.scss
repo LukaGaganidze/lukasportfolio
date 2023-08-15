@@ -89,6 +89,13 @@
   width: 100vw;
 }
 
+.marvel-desc {
+  display: block;
+}
+.marvel-mob {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .projects-sec {
     padding-top: 8rem;
@@ -139,6 +146,12 @@
       }
     }
   }
+  .marvel-desc {
+    display: none;
+  }
+  .marvel-mob {
+    display: block;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -176,12 +189,6 @@
         line-height: 15px;
       }
     }
-  }
-  .marvel-mob {
-    display: block;
-  }
-  .marvel-desc {
-    display: none;
   }
 }
 
