@@ -24,18 +24,6 @@
       font-size: b.$font-size-large;
     }
   }
-
-  &__img {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("../../../assets/sections/resume/resume.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
 }
 
 @media (max-width: 1000px) {

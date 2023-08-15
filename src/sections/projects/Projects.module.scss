@@ -71,8 +71,22 @@
     }
   }
 }
-.marvel-mob {
+
+.paralax-image {
+  width: 100vw;
+  height: auto;
+}
+.paralax-image-mobile {
+  width: 100vw;
+  height: auto;
+  filter: blur(2px);
+}
+
+.paralax-mobile {
   display: none;
+}
+.parallax-background {
+  width: 100vw;
 }
 
 @media (max-width: 1200px) {
@@ -124,6 +138,15 @@
         background-color: a.$color-secondary;
       }
     }
+  }
+}
+
+@media (max-width: 1100px) {
+  .paralax-mobile {
+    display: block;
+  }
+  .paralax-desktop {
+    display: none;
   }
 }
 

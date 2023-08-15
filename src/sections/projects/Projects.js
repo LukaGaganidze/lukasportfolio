@@ -1,8 +1,15 @@
+"use client";
+
 import Resume from "./componenets/Resume";
 
 import classes from "./Projects.module.scss";
 
 import Image from "next/image";
+
+import { Parallax, Background } from "react-parallax";
+
+import parallaxResume from "../../assets/sections/resume/resume.jpg";
+import parallaxResumemobile from "../../assets/sections/resume/mobile-res.jpg";
 
 import paragliding from "../../assets/sections/projects/paragliding.jpg";
 import marvel from "../../assets/sections/projects/marvel.jpg";
@@ -16,8 +23,32 @@ const headingFont = Quicksand({ subsets: ["latin"] });
 const Projects = () => {
   return (
     <section>
-      {/* RESUME */}
-      <Resume />
+      {/* RESUME PARALLAX EFFECT */}
+      <Parallax className={classes["paralax-desktop"]} strength={400}>
+        <Resume />
+        <Background className={classes["parallax-background"]}>
+          <Image
+            className={classes["paralax-image"]}
+            src={parallaxResume}
+            alt="background image of blue night sky"
+            placeholder="blur"
+            quality={100}
+          />
+        </Background>
+      </Parallax>
+
+      <Parallax className={classes["paralax-mobile"]} strength={400}>
+        <Resume />
+        <Background>
+          <Image
+            className={classes["paralax-image-mobile"]}
+            src={parallaxResumemobile}
+            alt="background image of blue night sky"
+            placeholder="blur"
+            quality={100}
+          />
+        </Background>
+      </Parallax>
 
       {/* PROJECTS */}
       <div id="projects" className={classes["projects-sec"]}>

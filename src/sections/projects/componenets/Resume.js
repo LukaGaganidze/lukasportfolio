@@ -18,7 +18,6 @@ const Resume = () => {
       >
         <h3 className={headingFont.className}>CHECK OUT MY RÉSUMÉ</h3>
       </Link>
-      <div className={classes["resume__img"]}></div>
     </div>
   );
 };
