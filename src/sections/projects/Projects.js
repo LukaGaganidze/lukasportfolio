@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <section>
       {/* RESUME PARALLAX EFFECT */}
-      <Parallax className={classes["paralax-desktop"]} strength={400}>
+      <Parallax className={classes["paralax-desktop"]} strength={300}>
         <Resume />
         <Background className={classes["parallax-background"]}>
           <Image

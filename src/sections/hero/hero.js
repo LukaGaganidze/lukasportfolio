@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section className={classes["hero"]}>
       {/* DESKTOP */}
-      <Parallax className={classes["paralalax-desc"]} strength={400}>
+      <Parallax className={classes["paralalax-desc"]} strength={300}>
         <Content />
         <Background className={classes["paralalax-background"]}>
           <Image
