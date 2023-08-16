@@ -131,7 +131,7 @@ const Projects = () => {
           </div>
         </div>
         {/* PROJECT 3 */}
-        {/* <div className={classes["projects"]}>
+        <div className={classes["projects"]}>
           <Image src={fencing} alt="Paraglidingg project on laptop screen" />
 
           <div className={classes["projects__text"]}>
@@ -147,21 +147,18 @@ const Projects = () => {
             <div
               className={`${classes["projects__links"]} ${headingFont.className}`}
             >
-              <Link
-                target="_blank"
-                href="https://github.com/LukaGaganidze/manifestFNCG"
-              >
+              <Link target="_blank" href="https://fencing-shop.vercel.app/">
                 Visit Website
               </Link>
               <Link
                 target="_blank"
-                href="https://github.com/LukaGaganidze/manifestFNCG"
+                href="https://github.com/LukaGaganidze/fencingShop"
               >
                 Github
               </Link>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
