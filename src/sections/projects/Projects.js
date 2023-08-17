@@ -147,12 +147,12 @@ const Projects = () => {
             <div
               className={`${classes["projects__links"]} ${headingFont.className}`}
             >
-              <Link target="_blank" href="https://fencing-shop.vercel.app/">
+              <Link target="_blank" href="https://online-shop-cart.vercel.app/">
                 Visit Website
               </Link>
               <Link
                 target="_blank"
-                href="https://github.com/LukaGaganidze/fencingShop"
+                href="https://github.com/LukaGaganidze/online_shopping_cart"
               >
                 Github
               </Link>
