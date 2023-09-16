@@ -31,8 +31,8 @@ const About = () => {
           <span className={classes["about__text__highlight"]}>
             self-taught front-end web developer
           </span>{" "}
-          with more then one year of hands-on experience in personal projects
-          and freelancing.
+          with more two years of hands-on experience in personal projects and
+          freelancing.
         </span>
 
         <span>
