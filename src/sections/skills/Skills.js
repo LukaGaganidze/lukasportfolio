@@ -20,6 +20,7 @@ import redux from "../../assets/sections/skills/tecnologies/redux.png";
 import responsive from "../../assets/sections/skills/tecnologies/responsive.png";
 import sass from "../../assets/sections/skills/tecnologies/sass.png";
 import vercel from "../../assets/sections/skills/tecnologies/vercel.png";
+import angular from "../../assets/sections/skills/tecnologies/angular.png";
 
 // what i do
 import coding from "../../assets/sections/skills/whatIDo/coding.png";
@@ -109,6 +110,13 @@ const Skills = () => {
               className={classes["my-skills__img"]}
               src={github}
               alt="github logo"
+              placeholder="blur"
+              quality={100}
+            />
+            <Image
+              className={classes["my-skills__img"]}
+              src={angular}
+              alt="angular logo"
               placeholder="blur"
               quality={100}
             />
