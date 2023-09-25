@@ -14,6 +14,7 @@ import parallaxResumemobile from "../../assets/sections/resume/mobile-res.jpg";
 import paragliding from "../../assets/sections/projects/paragliding.jpg";
 import marvel from "../../assets/sections/projects/marvel.jpg";
 import fencing from "../../assets/sections/projects/fencing.jpg";
+import newsLetter from "../../assets/sections/projects/newsletter.jpg";
 
 import { Quicksand } from "next/font/google";
 import Link from "next/link";
@@ -57,8 +58,40 @@ const Projects = () => {
         >
           MY PROJECTS
         </h2>
+        {/* PROJECT 4 */}
+        <div className={classes["projects"]}>
+          <Image src={newsLetter} alt="newsLetter project on laptop screen" />
 
-        {/* PROJECT 1 */}
+          <div className={classes["projects__text"]}>
+            <h3 className={headingFont.className}>Coffee Driven Coder</h3>
+            <p>
+              My personal platform where I share my interests, hobbies, news,
+              and life experiences. It serves as my creative outlet, allowing me
+              to express my passion for designing and coding web applications.
+              Additionally, it acts as a living timeline, enabling me to reflect
+              on my journey and the chapters that have shaped my life.
+            </p>
+
+            <div
+              className={`${classes["projects__links"]} ${headingFont.className}`}
+            >
+              <Link
+                target="_blank"
+                href="https://coffee-driven-coder.vercel.app/"
+              >
+                Visit Website
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/LukaGaganidze/personal-blog"
+              >
+                Github
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* PROJECT 3 */}
         <div className={classes["projects"]}>
           {/* IMAGE */}
           <Image
@@ -130,7 +163,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/* PROJECT 3 */}
+        {/* PROJECT 1 */}
         <div className={classes["projects"]}>
           <Image src={fencing} alt="Paraglidingg project on laptop screen" />
 
