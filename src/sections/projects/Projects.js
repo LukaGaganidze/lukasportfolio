@@ -59,10 +59,15 @@ const Projects = () => {
           MY PROJECTS
         </h2>
         {/* PROJECT 4 */}
-        <div className={classes["projects"]}>
+        <div className={`${classes["projects"]} ${classes["on-process"]}`}>
+          {/*  */}
           <Image src={newsLetter} alt="newsLetter project on laptop screen" />
 
           <div className={classes["projects__text"]}>
+            {/* inprocess */}
+            <div className={classes["in-process-initial"]}>
+              <span>Ongoing Development</span>
+            </div>
             <h3 className={headingFont.className}>Coffee Driven Coder</h3>
             <p>
               My personal platform where I share my interests, hobbies, news,

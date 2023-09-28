@@ -96,6 +96,29 @@
   display: none;
 }
 
+// in process small indicator
+
+.on-process {
+  .projects__text {
+    position: relative;
+  }
+  .in-process-initial {
+    border: solid #9c9cb2 0.5px;
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    border-radius: 0.4rem;
+    cursor: default;
+
+    & span {
+      display: inline-block;
+      color: #9c9cb2;
+      padding: 0.5rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .projects-sec {
     padding-top: 8rem;
@@ -230,6 +253,32 @@
         font-size: b.$font-size-small-3;
         padding: 1rem 2rem;
         font-weight: 800;
+      }
+    }
+  }
+
+  // on process indicator
+  .on-process {
+    position: relative;
+    & .projects__text {
+      position: static;
+    }
+
+    .in-process-initial {
+      border: solid #9c9cb2 0.5px;
+      position: absolute;
+      top: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 0.4rem;
+      cursor: default;
+      font-size: b.$font-size-small;
+
+      & span {
+        display: inline-block;
+        color: #9c9cb2;
+        padding: 0.5rem;
+        letter-spacing: 1px;
       }
     }
   }
