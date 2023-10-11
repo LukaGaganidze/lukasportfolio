@@ -156,7 +156,10 @@ const Projects = () => {
             <div
               className={`${classes["projects__links"]} ${headingFont.className}`}
             >
-              <Link target="_blank" href="https://marvelpedia-v1.netlify.app/">
+              <Link
+                target="_blank"
+                href="https://marvelpedia-eight.vercel.app/"
+              >
                 Visit Website
               </Link>
               <Link
