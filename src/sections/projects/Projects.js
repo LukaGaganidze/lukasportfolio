@@ -118,7 +118,7 @@ const Projects = () => {
             >
               <Link
                 target="_blank"
-                href="https://paragliding-initial-luch.vercel.app/"
+                href="https://paragliding-booking.vercel.app/"
               >
                 Visit Website
               </Link>
