@@ -15,6 +15,7 @@ import paragliding from "../../assets/sections/projects/paragliding.jpg";
 import marvel from "../../assets/sections/projects/marvel.jpg";
 import fencing from "../../assets/sections/projects/fencing.jpg";
 import newsLetter from "../../assets/sections/projects/newsletter.jpg";
+import trading from "../../assets/sections/projects/trading.jpg";
 
 import { Quicksand } from "next/font/google";
 import Link from "next/link";
@@ -54,10 +55,41 @@ const Projects = () => {
       {/* PROJECTS */}
       <div id="projects" className={classes["projects-sec"]}>
         <h2
-          className={`${classes["projects__heading"]} ${headingFont.className}`}
-        >
+          className={`${classes["projects__heading"]} ${headingFont.className}`}>
           MY PROJECTS
         </h2>
+
+        {/* PROJECT 5 */}
+        <div className={`${classes["projects"]} ${classes["on-process"]}`}>
+          {/*  */}
+          <Image src={trading} alt="trading project on laptop screen" />
+
+          <div className={classes["projects__text"]}>
+            <h3 className={headingFont.className}>Coffee Coder Trading</h3>
+            <p>
+              Coffee Coder Trading is my personal project, developed from
+              scratch using Angular. The website features efficient lazy loading
+              for swift page loading and a responsive user interface that
+              seamlessly adapts to all devices. The website's state is managed
+              through services.
+            </p>
+
+            <div
+              className={`${classes["projects__links"]} ${headingFont.className}`}>
+              <Link
+                target="_blank"
+                href="https://coffee-driven-trading.vercel.app/">
+                Visit Website
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/LukaGaganidze/Trading-and-Coffee">
+                Github
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* PROJECT 4 */}
         <div className={`${classes["projects"]} ${classes["on-process"]}`}>
           {/*  */}
@@ -78,18 +110,15 @@ const Projects = () => {
             </p>
 
             <div
-              className={`${classes["projects__links"]} ${headingFont.className}`}
-            >
+              className={`${classes["projects__links"]} ${headingFont.className}`}>
               <Link
                 target="_blank"
-                href="https://coffee-driven-coder.vercel.app/"
-              >
+                href="https://coffee-driven-coder.vercel.app/">
                 Visit Website
               </Link>
               <Link
                 target="_blank"
-                href="https://github.com/LukaGaganidze/personal-blog"
-              >
+                href="https://github.com/LukaGaganidze/personal-blog">
                 Github
               </Link>
             </div>
@@ -114,18 +143,15 @@ const Projects = () => {
             </p>
 
             <div
-              className={`${classes["projects__links"]} ${headingFont.className}`}
-            >
+              className={`${classes["projects__links"]} ${headingFont.className}`}>
               <Link
                 target="_blank"
-                href="https://paragliding-booking.vercel.app/"
-              >
+                href="https://paragliding-booking.vercel.app/">
                 Visit Website
               </Link>
               <Link
                 target="_blank"
-                href="https://github.com/LukaGaganidze/paragliding-v1"
-              >
+                href="https://github.com/LukaGaganidze/paragliding-v1">
                 Github
               </Link>
             </div>
@@ -154,18 +180,15 @@ const Projects = () => {
             </p>
 
             <div
-              className={`${classes["projects__links"]} ${headingFont.className}`}
-            >
+              className={`${classes["projects__links"]} ${headingFont.className}`}>
               <Link
                 target="_blank"
-                href="https://marvelpedia-eight.vercel.app/"
-              >
+                href="https://marvelpedia-eight.vercel.app/">
                 Visit Website
               </Link>
               <Link
                 target="_blank"
-                href="https://github.com/LukaGaganidze/marvel"
-              >
+                href="https://github.com/LukaGaganidze/marvel">
                 Github
               </Link>
             </div>
@@ -186,15 +209,13 @@ const Projects = () => {
             </p>
 
             <div
-              className={`${classes["projects__links"]} ${headingFont.className}`}
-            >
+              className={`${classes["projects__links"]} ${headingFont.className}`}>
               <Link target="_blank" href="https://online-shop-cart.vercel.app/">
                 Visit Website
               </Link>
               <Link
                 target="_blank"
-                href="https://github.com/LukaGaganidze/online_shopping_cart"
-              >
+                href="https://github.com/LukaGaganidze/online_shopping_cart">
                 Github
               </Link>
             </div>
