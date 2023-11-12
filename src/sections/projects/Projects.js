@@ -16,6 +16,7 @@ import marvel from "../../assets/sections/projects/marvel.jpg";
 import fencing from "../../assets/sections/projects/fencing.jpg";
 import newsLetter from "../../assets/sections/projects/newsletter.jpg";
 import trading from "../../assets/sections/projects/trading.jpg";
+import weather from "../../assets/sections/projects/weather.jpg";
 
 import { Quicksand } from "next/font/google";
 import Link from "next/link";
@@ -84,6 +85,41 @@ const Projects = () => {
               <Link
                 target="_blank"
                 href="https://github.com/LukaGaganidze/Trading-and-Coffee">
+                Github
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* PROJECT 4 */}
+        <div className={`${classes["projects"]} ${classes["on-process"]}`}>
+          {/*  */}
+          <Image src={weather} alt="newsLetter project on laptop screen" />
+
+          <div className={classes["projects__text"]}>
+            {/* inprocess */}
+            <div className={classes["in-process-initial"]}>
+              <span>Ongoing Development</span>
+            </div>
+            <h3 className={headingFont.className}>Weather Forecast</h3>
+            <p>
+              The website is built with Angular and Material UI. I've integrated
+              the OpenWeatherMap API to provide accurate weather data. The
+              website is fully responsive. You can see weather forecasts for any
+              country, including a comprehensive five-day forecast. You can save
+              your favorite country's forecast. Enjoy!
+            </p>
+
+            <div
+              className={`${classes["projects__links"]} ${headingFont.className}`}>
+              <Link
+                target="_blank"
+                href="https://coffee-coder-weather.vercel.app/">
+                Visit Website
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/LukaGaganidze/weather-web-app">
                 Github
               </Link>
             </div>
