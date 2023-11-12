@@ -13,7 +13,7 @@ const Resume = () => {
     <div className={classes["resume"]}>
       <Link
         target="_blank"
-        href="https://drive.google.com/file/d/1FrHdtsiR1syTe7PSQskNgAiLvsgVU4xB/view"
+        href="https://drive.google.com/file/d/1m2YW0jGuBsmOkMaE58dtMfgd8-_dZWQd/view"
         className={classes["resume__text"]}>
         <h3 className={headingFont.className}>CHECK OUT MY RÉSUMÉ</h3>
       </Link>
