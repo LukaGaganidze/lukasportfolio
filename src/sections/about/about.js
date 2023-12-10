@@ -47,11 +47,9 @@ const About = () => {
 
         <span>
           I enjoy crafting UX/UI-friendly, responsive websites that seamlessly
-          merge aesthetics and functionality. My expertise centers around
-          <span className={classes["about__text__highlight"]}> ReactJS </span>
-          and
-          <span className={classes["about__text__highlight"]}> NextJS</span>,
-          technologies.
+          merge aesthetics and functionality. I feel most confident working with
+          <span className={classes["about__text__highlight"]}> Angular.</span>
+          {/* <span className={classes["about__text__highlight"]}> NextJS</span>, */}
         </span>
 
         <span>
