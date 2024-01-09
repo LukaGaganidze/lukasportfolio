@@ -37,8 +37,8 @@ const About = () => {
 
         <span>
           <span className={classes["about__text__highlight"]}>
-            My aim is to become part of a dynamic company, where I can
-            collaborate with professionals and grow as a developer.
+            Currently I am working at Digital Governance Agency as Junior
+            Angular Developer.
           </span>{" "}
           Dedication fuels my journey as I relentlessly hone my coding skills
           daily, investing over 8 hours crafting projects and acquiring new
