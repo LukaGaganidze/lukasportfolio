@@ -27,7 +27,7 @@ const About = () => {
           <span className={classes["about__text__highlight"]}>
             Luka Gaganidze
           </span>
-          , a 26-year-old,{" "}
+          , a 27-year-old,{" "}
           <span className={classes["about__text__highlight"]}>
             self-taught front-end web developer
           </span>{" "}
