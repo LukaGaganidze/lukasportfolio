@@ -61,8 +61,7 @@ const Projects = () => {
         </h2>
 
         {/* PROJECT 5 */}
-        <div className={`${classes["projects"]} ${classes["on-process"]}`}>
-          {/*  */}
+        {/* <div className={`${classes["projects"]} ${classes["on-process"]}`}>
           <Image src={trading} alt="trading project on laptop screen" />
 
           <div className={classes["projects__text"]}>
@@ -89,7 +88,7 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* PROJECT 4 */}
         <div className={`${classes["projects"]} ${classes["on-process"]}`}>
